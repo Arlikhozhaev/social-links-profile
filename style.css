@@ -1,0 +1,133 @@
+@media screen and (min-width:375px){
+    html {
+        background-color:#1F1F1F;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        border-radius: 20px;
+        background-color: #333333;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        color: white;
+        margin: 5rem 30px 5rem 30px;
+        padding: 10px;
+        height: 750px;
+        justify-content: center;
+    }
+    #header {
+        text-align: center;
+    }
+    img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        padding-top: 20px;
+    }
+    h1 {
+        margin-bottom: 7px;
+    }
+    #city {
+        color: #C5F82A;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #socialmedia {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    ul {
+        padding-left: 0;
+    } 
+    ul li {
+        list-style-type: none;
+    }
+    button {
+        margin-bottom: 20px;
+        background-color: rgb(80, 80, 80);
+        text-align: center;
+        border-radius: 10px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    button:hover {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+/* MEDIUM SCREEN */
+@media screen and (min-width:780px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr; 
+    }
+    #header {
+        margin-right: 20px;
+        margin-left: 1rem;
+        grid-column: span 1;
+        margin-bottom: 3.5rem;
+    }
+    img {
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+    h1 {
+        margin-top: 2.5rem;
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    ul {
+        margin-top: 0;
+    }
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width:1440px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+    #header {
+        margin-bottom: 4rem;
+    }
+    img {
+        width: 250px;
+        height: 250px;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-top: 4.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    ul {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 40px;
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+    }
+    button {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+    #spread {
+        grid-column: span 2;
+    }
+} 
